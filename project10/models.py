@@ -1,10 +1,13 @@
-import datetime
-
-from itsdangerous import (TimedJSONWebSignatureSerializer as Serializer,
-                          BadSignature, SignatureExpired)
 from peewee import *
 
-import config
+DATABASE = SqliteDatabase('todo.sqlite')
+
+
+class Todo(Model):
+    name = CharField()
+
+    class Meta:
+        database = DATABASE
 
 
 def initialize():
