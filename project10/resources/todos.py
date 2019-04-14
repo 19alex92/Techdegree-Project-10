@@ -74,11 +74,15 @@ class ToDo(Resource):
 
 todo_api = Blueprint('resources.todo', __name__)
 api = Api(todo_api)
+
+# Endpoint for all todo tasks
 api.add_resource(
     ToDoList,
     '/todos',
     endpoint='todos'
 )
+
+# Endpoint for single todo tasks
 api.add_resource(
     ToDo,
     '/todos/<int:id>',

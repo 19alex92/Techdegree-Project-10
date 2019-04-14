@@ -1,4 +1,4 @@
-# Techdegree-Project-10
+# Treehouse Techdegree-Project-10
 > Todo API with Flask
 
 ## Project Description
@@ -34,19 +34,19 @@ Run each file on it's own and check for coverage to get accurate results.
 
 ### Test the app.py file
 
-1. 
+1. Run the tests
 
 ```shell
 coverage run -m tests.test_app
 ```
 
-2. 
+2. Get a report
 
 ```shell
 coverage report *.py
 ```
 
-Or for a html report:
+3. For a html report:
 
 ```shell
 coverage html *.py
@@ -54,19 +54,19 @@ coverage html *.py
 
 ### Test the models.py file
 
-1. 
+1. Run the tests
 
 ```shell
 coverage run -m tests.test_models
 ```
 
-2. 
+2. Get a report
 
 ```shell
 coverage report *.py
 ```
 
-Or for a html report:
+3. For a html report:
 
 ```shell
 coverage html *.py
@@ -74,19 +74,19 @@ coverage html *.py
 
 ### Test the todos.py file
 
-1. 
+1. Run the tests
 
 ```shell
 coverage run -m tests.test_todos
 ```
 
-2. 
+2. Get a report
 
 ```shell
 coverage report resources/*.py
 ```
 
-Or for a html report:
+3. For a html report:
 
 ```shell
 coverage html resources/*.py
