@@ -30,64 +30,21 @@ python app.py
 ## Testing Coverage
 
 There are 3 different test files to cover specific parts of the code.
-Run each file on it's own and check for coverage to get accurate results.
-
-### Test the app.py file
 
 1. Run the tests
 
 ```shell
-coverage run -m tests.test_app
+coverage run -m unittest discover
 ```
 
 2. Get a report
 
 ```shell
-coverage report *.py
+coverage report
 ```
 
 3. For a html report:
 
 ```shell
-coverage html *.py
-```
-
-### Test the models.py file
-
-1. Run the tests
-
-```shell
-coverage run -m tests.test_models
-```
-
-2. Get a report
-
-```shell
-coverage report *.py
-```
-
-3. For a html report:
-
-```shell
-coverage html *.py
-```
-
-### Test the todos.py file
-
-1. Run the tests
-
-```shell
-coverage run -m tests.test_todos
-```
-
-2. Get a report
-
-```shell
-coverage report resources/*.py
-```
-
-3. For a html report:
-
-```shell
-coverage html resources/*.py
+coverage html
 ```
